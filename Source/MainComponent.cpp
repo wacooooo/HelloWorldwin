@@ -16,10 +16,13 @@ void MainComponent::paint (juce::Graphics& g)
     // (Our component is opaque, so we must completely fill the background with a solid colour)
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
 
-    g.setFont (juce::Font (16.0f));
-    g.setColour (juce::Colours::white);
-    g.drawText ("Hello World!", getLocalBounds(), juce::Justification::centred, true);
+    g.setFont (juce::Font (42.f)); // FLOAT VALUE BRUH. 
+    g.setColour (juce::Colours::red);
+    g.drawText ("VibeControl", getLocalBounds(), juce::Justification::centred, true);
+    // drawText is a function ?? BRUH.  
+    // MUST LEARN C++ before any weird shit 
 }
+// what are .h files doing ? 
 
 void MainComponent::resized()
 {
